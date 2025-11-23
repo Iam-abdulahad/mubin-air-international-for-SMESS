@@ -1,0 +1,108 @@
+.org-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.org-chart-page {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.chart-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.chart-header h1 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.chart-header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  overflow: auto;
+}
+
+.org-chart-svg {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid #333;
+}
+
+.top-management {
+  background-color: #2E86AB;
+}
+
+.managers {
+  background-color: #A23B72;
+}
+
+.staff {
+  background-color: #F18F01;
+}
+
+.junior-staff {
+  background-color: #C73E1D;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .org-chart-container {
+    padding: 10px;
+  }
+  
+  .org-chart-page {
+    padding: 15px;
+  }
+  
+  .chart-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .chart-legend {
+    gap: 15px;
+  }
+}

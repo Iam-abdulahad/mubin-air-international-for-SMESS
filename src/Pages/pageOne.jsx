@@ -9,9 +9,9 @@ import logo2 from "../assets/Images/Logo/logo2.png";
 
 const PageOne = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center font-sans">
+    <div className=" container mx-auto min-h-screen flex justify-center items-center font-sans">
       <section
-        className="w-[800px] max-w-[95%] py-[50px] px-[40px] bg-transparent relative"
+        className="py-[50px] px-[40px] bg-transparent relative"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -32,7 +32,7 @@ const PageOne = () => {
           </p>
         </div>
 
-        <hr className="border-none border-t border-solid border-transparent my-[10px] mb-[20px] w-[90%]" />
+        {/* REMOVED HR LINE - No more black border! */}
 
         {/* Training Center Section */}
         <div className="flex items-center mb-[40px]">
@@ -45,18 +45,19 @@ const PageOne = () => {
         </div>
 
         {/* Image Grid Section */}
+        {/* Image Grid Section */}
         <div className="grid grid-cols-2">
           {/* Image 1 */}
-          <div className="overflow-hidden h-[250px] w-[250px]  right-0 rounded-[0px_60px_0px_60px] border-8 border-indigo-600  transition-all duration-300 ease-in-out hover:scale-105 hover:border-white/30">
+          <div className="h-[1px] my-[10px] mb-[20px] w-[90%] overflow-hidden h-[250px] w-[250px] right-0 rounded-[0px_60px_0px_60px] border-[12px] border-blue-500 transition-all duration-300 ease-in-out hover:scale-105 hover:border-white/30">
             <img
               src={engrs}
               alt="Industrial Worker Checking Pipe"
-              className="w-full h-full object-cover block "
+              className="w-full h-full object-cover block"
             />
           </div>
 
           {/* Image 2 */}
-          <div className="overflow-hidden h-[250px] w-[250px] rounded-[60px_0px_60px_0px] border-[12px] transition-all duration-300 ease-in-out hover:scale-105 hover:border-white/30">
+          <div className="overflow-hidden h-[250px] w-[250px] rounded-[60px_0px_60px_0px] border-[12px] border-red-500 transition-all duration-300 ease-in-out hover:scale-105 hover:border-white/30">
             <img
               src={welder}
               alt="Electricians Working on Panel"
@@ -65,7 +66,7 @@ const PageOne = () => {
           </div>
 
           {/* Image 3 */}
-          <div className="overflow-hidden h-[250px] w-[250px] relative rounded-[60px_0px_60px_0px] border-[12px] border-white transition-all duration-300 ease-in-out hover:scale-105 hover:border-white/30">
+          <div className="overflow-hidden h-[250px] w-[250px] relative rounded-[60px_0px_60px_0px] border-[12px] border-green-500 transition-all duration-300 ease-in-out hover:scale-105 hover:border-white/30">
             <img
               src={fuelField}
               alt="Oil Refinery/Plant"
@@ -74,7 +75,7 @@ const PageOne = () => {
           </div>
 
           {/* Image 4 */}
-          <div className="overflow-hidden h-[320px] w-[320px]  relative backdrop-blur-md bg-white/5 rounded-[0px_60px_0px_60px] border-[12px] border-white/20 transition-all duration-300 ease-in-out hover:scale-105 hover:border-white/30">
+          <div className="overflow-hidden h-[320px] w-[320px] relative backdrop-blur-md bg-white/5 rounded-[0px_60px_0px_60px] border-[12px] border-purple-500 transition-all duration-300 ease-in-out hover:scale-105 hover:border-white/30">
             <img
               src={travels}
               alt="Globe with Luggage and Passport"
@@ -83,16 +84,6 @@ const PageOne = () => {
           </div>
         </div>
 
-        {/* Footer Section */}
-        <div className="text-right mt-[70px]">
-          <div className="aiira-logo-placeholder">
-            {/* <img 
-              src="aiira_logo.png" 
-              alt="AIIRA Logo" 
-              className="h-[40px] w-auto filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.2)]" 
-            /> */}
-          </div>
-        </div>
       </section>
     </div>
   );
